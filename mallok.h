@@ -2,6 +2,7 @@
 #include <unistd.h>
 
 #define w_size uint32_t
+#define NO_FIT(block, available_size) block-> size < available_size
 
 enum State {
     free = 0,
