@@ -91,12 +91,12 @@ void *my_nextfit_malloc(int size) {
 
   last->state = (enum State)taken;
 
-  return allocate_header(*last);
+  return last + sizeof(HeaderNode);
 }
 
 void my_free(void *ptr) {
-
   
+    
 }
 
 int main(void) { return 0; }
